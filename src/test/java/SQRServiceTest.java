@@ -18,7 +18,7 @@ class SQRServiceTest {
             "Interval upper 9802, 9802, 99999, 0",
             "Critical path, 200, 300, 3",
     })
-    void shouldCalculate(String testName, int underLimit, int upperLimit, int expected){
+    void shouldCalculate(String testName, int underLimit, int upperLimit, int expected) {
         SQRService service = new SQRService();
 
         int actual = service.calculate(underLimit, upperLimit);
